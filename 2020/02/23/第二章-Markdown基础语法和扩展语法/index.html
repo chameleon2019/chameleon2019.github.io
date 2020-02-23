@@ -22,14 +22,14 @@
 
   <meta name="description" content="基础语法写标题使用两种标记：-&#x2F;&#x3D; 或者 #。 -&#x2F;&#x3D;：如字面意思，只能支持这两级标题，-是二级标题，&#x3D;是一级标题 #：支持6级标题 写标题的注意点汇总：  标题尽量简短，方便应用 保持间距，标题前后空一行 不写多余空格  粗体和斜体粗体：两个*或者两个_包裹 斜体：一个*或者一个_包括 eg:  粗体1 粗体2 斜体1 _斜体2_ 注意点：  使用*比_有可读性 粗体和斜体标记内部，建议不用空格">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第二章-Markdown基础语法和扩展语法">
+<meta property="og:title" content="Markdown语法">
 <meta property="og:url" content="http://yoursite.com/2020/02/23/%E7%AC%AC%E4%BA%8C%E7%AB%A0-Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%92%8C%E6%89%A9%E5%B1%95%E8%AF%AD%E6%B3%95/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="基础语法写标题使用两种标记：-&#x2F;&#x3D; 或者 #。 -&#x2F;&#x3D;：如字面意思，只能支持这两级标题，-是二级标题，&#x3D;是一级标题 #：支持6级标题 写标题的注意点汇总：  标题尽量简短，方便应用 保持间距，标题前后空一行 不写多余空格  粗体和斜体粗体：两个*或者两个_包裹 斜体：一个*或者一个_包括 eg:  粗体1 粗体2 斜体1 _斜体2_ 注意点：  使用*比_有可读性 粗体和斜体标记内部，建议不用空格">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yoursite.com/assets/pic.png">
 <meta property="article:published_time" content="2020-02-23T02:22:52.825Z">
-<meta property="article:modified_time" content="2020-02-23T13:46:20.624Z">
+<meta property="article:modified_time" content="2020-02-23T14:17:03.708Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/assets/pic.png">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>第二章-Markdown基础语法和扩展语法 | Hexo</title>
+  <title>Markdown语法 | Hexo</title>
   
 
 
@@ -163,7 +163,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          第二章-Markdown基础语法和扩展语法
+          Markdown语法
         </h1>
 
         <div class="post-meta">
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-02-23 10:22:52 / Modified: 21:46:20" itemprop="dateCreated datePublished" datetime="2020-02-23T10:22:52+08:00">2020-02-23</time>
+              <time title="Created: 2020-02-23 10:22:52 / Modified: 22:17:03" itemprop="dateCreated datePublished" datetime="2020-02-23T10:22:52+08:00">2020-02-23</time>
             </span>
 
           
@@ -251,7 +251,7 @@
 <p>我们经常使用<a href="http://www.smzdm.com" target="_blank" rel="noopener" title="什么值得买">什么值得买</a>、<a href="http://www.jd.com" target="_blank" rel="noopener" title="京东">京东</a>、<a href="https://192.168.50.1:8443" target="_blank" rel="noopener" title="路由器管理页面">路由器管理页面</a></p>
 <p>网络链接</p>
 <p>将网络地址或者邮箱地址使用&lt;&gt;包裹起来会被自动转换为超链接：</p>
-<p><a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#x64;&#x75;&#97;&#x6e;&#x7a;&#x68;&#x69;&#x6a;&#105;&#101;&#x31;&#x40;&#104;&#x75;&#x61;&#x77;&#101;&#x69;&#46;&#x63;&#111;&#109;">&#x64;&#x75;&#97;&#x6e;&#x7a;&#x68;&#x69;&#x6a;&#105;&#101;&#x31;&#x40;&#104;&#x75;&#x61;&#x77;&#101;&#x69;&#46;&#x63;&#111;&#109;</a></p>
+<p><a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#100;&#x75;&#x61;&#x6e;&#x7a;&#x68;&#105;&#x6a;&#x69;&#x65;&#49;&#x40;&#104;&#117;&#x61;&#x77;&#101;&#105;&#x2e;&#99;&#x6f;&#109;">&#100;&#x75;&#x61;&#x6e;&#x7a;&#x68;&#105;&#x6a;&#x69;&#x65;&#49;&#x40;&#104;&#117;&#x61;&#x77;&#101;&#105;&#x2e;&#99;&#x6f;&#109;</a></p>
 <h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>行内代码：`包裹</p>
 <p>代码块：Tab键或4个空格开头，建议直接使用围栏代码块<code>代码</code>，并且显式注明语言。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line">dir = os.path.join(<span class="string">'a'</span>,<span class="string">'b'</span>)</span><br></pre></td></tr></table></figure>
@@ -345,12 +345,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/02/22/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%88%91%E7%9A%84%E5%9C%B0%E7%9B%98%E6%88%91%E5%81%9A%E4%B8%BB/" rel="prev" title="第七章-我的地盘我做主">
-      <i class="fa fa-chevron-left"></i> 第七章-我的地盘我做主
+    <a href="/2020/02/22/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%88%91%E7%9A%84%E5%9C%B0%E7%9B%98%E6%88%91%E5%81%9A%E4%B8%BB/" rel="prev" title="搭建博客">
+      <i class="fa fa-chevron-left"></i> 搭建博客
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/02/23/%E7%AC%AC%E4%B8%89%E7%AB%A0-typora%E4%BD%BF%E7%94%A8/" rel="next" title="第三章-typora使用">
-      第三章-typora使用 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/02/23/%E7%AC%AC%E4%B8%89%E7%AB%A0-typora%E4%BD%BF%E7%94%A8/" rel="next" title="Typora">
+      Typora <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
