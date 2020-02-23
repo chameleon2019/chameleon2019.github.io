@@ -105,7 +105,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/23/%E7%AC%AC%E4%B8%89%E7%AB%A0-typora%E4%BD%BF%E7%94%A8/" data-id="ck6yrh5ou0002zkj48p62h65s" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/23/%E7%AC%AC%E4%B8%89%E7%AB%A0-typora%E4%BD%BF%E7%94%A8/" data-id="ck6yupslx0003lsj49j0s7w15" class="article-share-link">Share</a>
       
       
     </footer>
@@ -200,7 +200,7 @@
 <p>我们经常使用<a href="http://www.smzdm.com" target="_blank" rel="noopener" title="什么值得买">什么值得买</a>、<a href="http://www.jd.com" target="_blank" rel="noopener" title="京东">京东</a>、<a href="https://192.168.50.1:8443" target="_blank" rel="noopener" title="路由器管理页面">路由器管理页面</a></p>
 <p>网络链接</p>
 <p>将网络地址或者邮箱地址使用&lt;&gt;包裹起来会被自动转换为超链接：</p>
-<p><a href="&#109;&#97;&#x69;&#108;&#116;&#111;&#58;&#x64;&#x75;&#x61;&#x6e;&#122;&#x68;&#105;&#x6a;&#x69;&#101;&#49;&#64;&#x68;&#117;&#x61;&#119;&#x65;&#105;&#x2e;&#x63;&#111;&#109;">&#x64;&#x75;&#x61;&#x6e;&#122;&#x68;&#105;&#x6a;&#x69;&#101;&#49;&#64;&#x68;&#117;&#x61;&#119;&#x65;&#105;&#x2e;&#x63;&#111;&#109;</a></p>
+<p><a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#x64;&#x75;&#x61;&#110;&#122;&#104;&#105;&#x6a;&#x69;&#101;&#49;&#x40;&#x68;&#x75;&#x61;&#x77;&#101;&#105;&#x2e;&#x63;&#111;&#109;">&#x64;&#x75;&#x61;&#110;&#122;&#104;&#105;&#x6a;&#x69;&#101;&#49;&#x40;&#x68;&#x75;&#x61;&#x77;&#101;&#105;&#x2e;&#x63;&#111;&#109;</a></p>
 <h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>行内代码：`包裹</p>
 <p>代码块：Tab键或4个空格开头，建议直接使用围栏代码块<code>代码</code>，并且显式注明语言。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line">dir = os.path.join(<span class="string">'a'</span>,<span class="string">'b'</span>)</span><br></pre></td></tr></table></figure>
@@ -283,7 +283,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/23/%E7%AC%AC%E4%BA%8C%E7%AB%A0-Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%92%8C%E6%89%A9%E5%B1%95%E8%AF%AD%E6%B3%95/" data-id="ck6yrh5ov0003zkj40pj1g3tx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/23/%E7%AC%AC%E4%BA%8C%E7%AB%A0-Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%92%8C%E6%89%A9%E5%B1%95%E8%AF%AD%E6%B3%95/" data-id="ck6yupslw0001lsj4dj1p1vh0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -316,11 +316,39 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Hexo可以把Markdown文档快速解析成静态页面，并支持各种漂亮的主题，可以使用熟悉的Markdown来写文章，然后通过Hexo把文章转换成静态页面，再把这些静态页面托管到GitHub上，然后绑定一个域名，个人博客就完成了。</p>
+<h2 id="搭建个人博客基本流程"><a href="#搭建个人博客基本流程" class="headerlink" title="搭建个人博客基本流程"></a>搭建个人博客基本流程</h2><ol>
+<li>搭建本地写作环境</li>
+<li>创建GitHub Pages</li>
+<li>绑定域名</li>
+</ol>
+<h4 id="搭建本地写作环境"><a href="#搭建本地写作环境" class="headerlink" title="搭建本地写作环境"></a>搭建本地写作环境</h4><ol>
+<li>使用markdown写好的md文件放到source\_posts\\文件夹中</li>
+<li>使用nodejs，建立hexo工程</li>
+<li>在本地验证是否成功搭建</li>
+</ol>
+<h4 id="创建Github-Pages"><a href="#创建Github-Pages" class="headerlink" title="创建Github Pages"></a>创建Github Pages</h4><ol>
+<li><p>在Github上创建一个public的username.github.io的repository即可。</p>
+</li>
+<li><p>把Hexo生成的静态网站推送到Github上，需要修改_config.xml，配置hexo发布到github</p>
+</li>
+<li>浏览github pages确认显示是否OK</li>
+</ol>
+<p>注意点：</p>
+<ul>
+<li>username.github.io的repository里需要一个readme.md</li>
+<li>hexo对typora的扩展特性支持不佳</li>
+</ul>
+<h4 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h4><ol>
+<li>购买域名</li>
+<li>在域名解析页面添加解析记录</li>
+<li>在Github Pages所在repository中设置新域名</li>
+</ol>
+<h4 id="（可选）更换主题"><a href="#（可选）更换主题" class="headerlink" title="（可选）更换主题"></a>（可选）更换主题</h4><p>Hexo安装主题的方式是：把主题文件复制到站点目录的themes目录下，修改配置文件。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/22/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%88%91%E7%9A%84%E5%9C%B0%E7%9B%98%E6%88%91%E5%81%9A%E4%B8%BB/" data-id="ck6yrh5ot0001zkj42460am0g" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/22/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%88%91%E7%9A%84%E5%9C%B0%E7%9B%98%E6%88%91%E5%81%9A%E4%B8%BB/" data-id="ck6yupslx0002lsj43kt4crmw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -367,7 +395,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/22/%E7%AC%AC%E4%B8%80%E7%AB%A0-Markdown%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" data-id="ck6yrh5op0000zkj4cqxp5zdg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/22/%E7%AC%AC%E4%B8%80%E7%AB%A0-Markdown%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" data-id="ck6yupslr0000lsj4975x9e59" class="article-share-link">Share</a>
       
       
     </footer>

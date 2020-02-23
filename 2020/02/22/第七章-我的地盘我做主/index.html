@@ -7,15 +7,15 @@
   
   <title>第七章-我的地盘我做主 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hexo可以把Markdown文档快速解析成静态页面，并支持各种漂亮的主题，可以使用熟悉的Markdown来写文章，然后通过Hexo把文章转换成静态页面，再把这些静态页面托管到GitHub上，然后绑定一个域名，个人博客就完成了。">
+  <meta name="description" content="Hexo可以把Markdown文档快速解析成静态页面，并支持各种漂亮的主题，可以使用熟悉的Markdown来写文章，然后通过Hexo把文章转换成静态页面，再把这些静态页面托管到GitHub上，然后绑定一个域名，个人博客就完成了。 搭建个人博客基本流程 搭建本地写作环境 创建GitHub Pages 绑定域名  搭建本地写作环境 使用markdown写好的md文件放到source\_posts\\文">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第七章-我的地盘我做主">
 <meta property="og:url" content="http://yoursite.com/2020/02/22/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%88%91%E7%9A%84%E5%9C%B0%E7%9B%98%E6%88%91%E5%81%9A%E4%B8%BB/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Hexo可以把Markdown文档快速解析成静态页面，并支持各种漂亮的主题，可以使用熟悉的Markdown来写文章，然后通过Hexo把文章转换成静态页面，再把这些静态页面托管到GitHub上，然后绑定一个域名，个人博客就完成了。">
+<meta property="og:description" content="Hexo可以把Markdown文档快速解析成静态页面，并支持各种漂亮的主题，可以使用熟悉的Markdown来写文章，然后通过Hexo把文章转换成静态页面，再把这些静态页面托管到GitHub上，然后绑定一个域名，个人博客就完成了。 搭建个人博客基本流程 搭建本地写作环境 创建GitHub Pages 绑定域名  搭建本地写作环境 使用markdown写好的md文件放到source\_posts\\文">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-22T15:54:33.785Z">
-<meta property="article:modified_time" content="2020-02-22T14:13:35.025Z">
+<meta property="article:modified_time" content="2020-02-23T09:49:49.342Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -89,11 +89,39 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Hexo可以把Markdown文档快速解析成静态页面，并支持各种漂亮的主题，可以使用熟悉的Markdown来写文章，然后通过Hexo把文章转换成静态页面，再把这些静态页面托管到GitHub上，然后绑定一个域名，个人博客就完成了。</p>
+<h2 id="搭建个人博客基本流程"><a href="#搭建个人博客基本流程" class="headerlink" title="搭建个人博客基本流程"></a>搭建个人博客基本流程</h2><ol>
+<li>搭建本地写作环境</li>
+<li>创建GitHub Pages</li>
+<li>绑定域名</li>
+</ol>
+<h4 id="搭建本地写作环境"><a href="#搭建本地写作环境" class="headerlink" title="搭建本地写作环境"></a>搭建本地写作环境</h4><ol>
+<li>使用markdown写好的md文件放到source\_posts\\文件夹中</li>
+<li>使用nodejs，建立hexo工程</li>
+<li>在本地验证是否成功搭建</li>
+</ol>
+<h4 id="创建Github-Pages"><a href="#创建Github-Pages" class="headerlink" title="创建Github Pages"></a>创建Github Pages</h4><ol>
+<li><p>在Github上创建一个public的username.github.io的repository即可。</p>
+</li>
+<li><p>把Hexo生成的静态网站推送到Github上，需要修改_config.xml，配置hexo发布到github</p>
+</li>
+<li>浏览github pages确认显示是否OK</li>
+</ol>
+<p>注意点：</p>
+<ul>
+<li>username.github.io的repository里需要一个readme.md</li>
+<li>hexo对typora的扩展特性支持不佳</li>
+</ul>
+<h4 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h4><ol>
+<li>购买域名</li>
+<li>在域名解析页面添加解析记录</li>
+<li>在Github Pages所在repository中设置新域名</li>
+</ol>
+<h4 id="（可选）更换主题"><a href="#（可选）更换主题" class="headerlink" title="（可选）更换主题"></a>（可选）更换主题</h4><p>Hexo安装主题的方式是：把主题文件复制到站点目录的themes目录下，修改配置文件。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/22/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%88%91%E7%9A%84%E5%9C%B0%E7%9B%98%E6%88%91%E5%81%9A%E4%B8%BB/" data-id="ck6yrh5ot0001zkj42460am0g" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/22/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%88%91%E7%9A%84%E5%9C%B0%E7%9B%98%E6%88%91%E5%81%9A%E4%B8%BB/" data-id="ck6yupslx0002lsj43kt4crmw" class="article-share-link">Share</a>
       
       
     </footer>
