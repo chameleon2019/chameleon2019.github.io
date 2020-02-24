@@ -144,6 +144,106 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/24/Python%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/24/Python%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">Python操作数据库/数据库基础</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-02-24 20:47:51 / Modified: 22:42:37" itemprop="dateCreated datePublished" datetime="2020-02-24T20:47:51+08:00">2020-02-24</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="数据库基础"><a href="#数据库基础" class="headerlink" title="数据库基础"></a>数据库基础</h2><p>关系型数据库：</p>
+<p>非关系型数据库：</p>
+<ul>
+<li>文档型</li>
+<li>key-value型</li>
+<li>列式数据库</li>
+<li>图形数据库</li>
+</ul>
+<p><strong>后续继续补充</strong></p>
+<h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><p>SQL: Structured Query Language</p>
+<p>程序员和DBA可以完成如下工作：</p>
+<ol>
+<li>在数据库中检索信息</li>
+<li>对数据库的信息进行更新</li>
+<li>改变数据库的结构</li>
+<li>更改系统的安全设置</li>
+<li>增加或回收用户对数据库、表的许可权限</li>
+</ol>
+<p>程序员前三个，DBA后两个。</p>
+<p>标准的SQL语句通常分为如下几个类型：</p>
+<ol>
+<li><p>查询语句：select语句</p>
+</li>
+<li><p>DML（Data Manipulation Language）数据操作语言：insert, update, delete, select</p>
+</li>
+<li><p>DDL（Data Definition Language）数据定义语言：create, alter, drop, truncate</p>
+</li>
+<li><p>DCL（Data Control Language）数据控制语言：grant, revoke</p>
+</li>
+<li>事务控制语句：commit, rollback, savepoint</li>
+</ol>
+<p>数据库约束：通过约束可以更好的保证数据表里数据的完整性，约束是在表上强制执行的数据校验规则，主要用于保证数据库里的数据的完整性，除此之外，当表中数据存在相互依赖的时候，可以保护相关的数据不被删除。</p>
+<p>大部分数据库支持下面五种完整性约束。</p>
+<p>NOT NULL：非空约束，指定某列不能为空；not null</p>
+<p>UNIQUE：唯一约束，指定某列或者几列组合不能重复；[constaint 约束名] 约束定义</p>
+<p>PRIMARY KEY：主键，指定该列的值可以唯一地标识该条记录；相当于非空约束和唯一约束；primary key，auto_increment用于设置自增长；</p>
+<p>FOREIGN KEY：外键，指定该行记录从属于主表中的一条记录，主要用于保证参照的完整性；</p>
+<p>CHECK：检查，指定一个布尔表达式，用于指定对应列的值必须满足该表达式。</p>
+<p><strong>MySQL不支持CHECK约束。</strong></p>
+<p>约束也是数据库对象，也拥有自己的名字，根据约束对数据列的限制，分为两类：单列约束和多列约束。</p>
+<p>为数据表建立约束有两个时机：建表的同时为相应的数据列指定约束和建表后创建，以修改表的方式来增加约束；</p>
+<p>约束通常都无法修改；MySQL使用information_schema数据库里的TABLE_CONSTRAINTS表来保存该数据库实例中的所有的约束信息。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/23/Markdown/%E7%AC%AC%E4%B8%89%E7%AB%A0-typora%E4%BD%BF%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -656,7 +756,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
